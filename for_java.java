@@ -7,6 +7,12 @@ public class Main {
   //boolean set_statement = false;
     // start program
     // where is the while(!set_statement) {
+
+    switch (my_input) {
+      case 1: inputString = "Input a value for inch: ";
+        break;
+      case 2: inputString = "Input a value for gallon: "
+    }
     try {
       System.out.print("Input a value for inch: ");
       double inch = input.nextDouble();
