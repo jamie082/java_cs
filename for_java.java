@@ -9,34 +9,29 @@ public class Main {
   //boolean set_statement = false;
     // start program
     // where is the while(!set_statement) {
-    double gallons;
-    double liters;
-
    // liters = gallons * 3.7854; // convert to liters
+    System.out.println("Welcome to my Conversion Program by Jamie M WGU Computer Science Student v.01");
+    System.out.println("Please select 1 for inch conversion or 2 for gallon conversion : ");
+    int UserIn;
+    UserIn = in.nextInt(); /* Get user input for program into */
+    
+    String inputString = "";
 
-    /*
-
-    System.out.println("Welcome to my Conversion Program by Jamie v.01")
-    System.out.println("Please select 1 for inch conversion or 2 for gallon conversion")
-    while (true) {
-      switch (my_input) {
+    int my_input = inputString;
+    
+    switch (my_input) { // inputted value from choice
         case 1: inputString = "1.) Input a value for inch: ";
+          double meters = inch * 0.0254;
+          double inch = input.nextDouble();
+          System.out.println(inch + " inch is " +  meters + " meters");
           break;
         case 2: inputString = "2.) Input a value for gallon: ";
-          break;
-        }
-      }
-    */
-    try {
-      System.out.print("Input a value for inch: ");
-      double inch = input.nextDouble();
-      double meters = inch * 0.0254;
-      System.out.println(inch + " inch is " + meters + " meters");
-      System.out.println(gallons + " gallons is " + liters + " liters.");
-  } catch(Exception e) {
-      System.out.println("Not a valid number.");
-      // Clear out input buffer
-      //input.NextLine();
+          double gallons;
+          double liters;
+          gallons = 10;
+          liters = gallons * 3.7854;
+          System.out.println(gallons + " gallons is " + liters + " liters");
+        default:
     }
   }
 }
